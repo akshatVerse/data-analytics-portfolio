@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="slotBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7f7f4" />
+      <stop offset="100%" stop-color="#eeeeea" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#slotBg)" />
+  <rect width="800" height="500" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="2" />
+
+  <!-- Subtle grid pattern -->
+  <g stroke="rgba(0,0,0,0.03)" stroke-width="1">
+    <line x1="0" y1="125" x2="800" y2="125" />
+    <line x1="0" y1="250" x2="800" y2="250" />
+    <line x1="0" y1="375" x2="800" y2="375" />
+    <line x1="200" y1="0" x2="200" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+  </g>
+
+  <!-- Centered Icon & Information -->
+  <g transform="translate(400, 210)">
+    <!-- Dashboard Frame Icon -->
+    <rect x="-45" y="-60" width="90" height="60" rx="6" fill="#ffffff" stroke="rgba(0,0,0,0.12)" stroke-width="1.5" />
+    <!-- Header bar -->
+    <line x1="-45" y1="-42" x2="45" y2="-42" stroke="rgba(0,0,0,0.08)" stroke-width="1" />
+    <!-- Mini KPI cards -->
+    <rect x="-37" y="-36" width="22" height="12" rx="2" fill="#eaf1e7" />
+    <rect x="-11" y="-36" width="22" height="12" rx="2" fill="#eaf1e7" />
+    <rect x="15" y="-36" width="22" height="12" rx="2" fill="#eaf1e7" />
+    <!-- Mini chart -->
+    <path d="M -35 -5 L -20 -15 L -5 -8 L 15 -20 L 35 -10" fill="none" stroke="#3d5d36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Text Labels -->
+    <text y="36" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="16" font-weight="700" fill="#171916" text-anchor="middle">Power BI Dashboard Screenshot</text>
+    <text y="60" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="500" fill="#757a70" text-anchor="middle">Image Slot • Ready for real dashboard capture</text>
+    <text y="82" font-family="'Inter', monospace" font-size="11" fill="#959a90" text-anchor="middle">public/assets/projects/earthquake-placeholder.svg</text>
+  </g>
+</svg>

@@ -1,0 +1,223 @@
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+   Fluid layout for Mobile, Tablet, Laptop, and Large Displays
+   ============================================================ */
+
+/* =========================================
+   Tablet / Small Laptop (max-width: 992px)
+   ========================================= */
+@media (max-width: 992px) {
+  .section {
+    padding: 5rem 0;
+  }
+
+  .hero {
+    padding: 3.5rem 0 3rem;
+  }
+
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    text-align: left;
+  }
+
+  .hero__visual {
+    order: -1;
+    justify-content: flex-start;
+  }
+
+  .hero__arch-frame {
+    width: 280px;
+    height: 350px;
+    border-radius: 140px 140px 20px 20px;
+  }
+
+  .hero__badge--top-right {
+    right: -10px;
+  }
+
+  .hero__badge--bottom-left {
+    left: -10px;
+  }
+
+  .hero__bg-lines {
+    width: 450px;
+    height: 450px;
+    top: 0;
+    right: 0;
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .project__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-case-study:nth-child(even) .project__grid {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .project-case-study:nth-child(even) .project__gallery {
+    border-left: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .project__gallery {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    min-height: 280px;
+  }
+
+  .achievements__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* =========================================
+   Mobile (max-width: 768px)
+   ========================================= */
+@media (max-width: 768px) {
+  :root {
+    --space-container: 1.25rem;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 72px);
+    background-color: var(--color-bg);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.5rem 1.5rem;
+    gap: 1.5rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-base);
+    border-bottom: 1px solid var(--color-border);
+    overflow-y: auto;
+  }
+
+  .nav__menu.is-active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav__link {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .nav__hamburger {
+    display: block;
+  }
+
+  .nav__contact-btn {
+    display: none;
+  }
+
+  .hero__headline {
+    font-size: 2.5rem;
+  }
+
+  .hero__cta-group {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .hero__cta-group .btn {
+    width: 100%;
+  }
+
+  .about__focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certifications__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .education-card__score-badge {
+    align-self: flex-start;
+  }
+
+  .contact__cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project__content {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .resume-banner {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .resume-banner__title {
+    font-size: 1.6rem;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* =========================================
+   Small Mobile (max-width: 480px)
+   ========================================= */
+@media (max-width: 480px) {
+  .hero__headline {
+    font-size: 2.15rem;
+  }
+
+  .hero__arch-frame {
+    width: 240px;
+    height: 300px;
+    border-radius: 120px 120px 16px 16px;
+  }
+
+  .floating-badge {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .floating-badge__icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .floating-badge__value {
+    font-size: 0.78rem;
+  }
+
+  .hero__corner-index {
+    display: none;
+  }
+
+  .achievement-card {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

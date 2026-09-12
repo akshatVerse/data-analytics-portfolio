@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#fbfbf9" />
+  
+  <!-- Subtle analytical contour curves -->
+  <path d="M 1200 200 C 950 200 800 350 700 500 C 600 650 450 630 200 630" stroke="#3d5d36" stroke-width="2" stroke-dasharray="6,6" opacity="0.25" fill="none" />
+  <path d="M 1200 300 C 1000 300 880 420 800 560" stroke="#3d5d36" stroke-width="1.5" opacity="0.2" fill="none" />
+  
+  <rect x="120" y="100" width="960" height="430" rx="20" fill="#ffffff" stroke="rgba(0,0,0,0.08)" stroke-width="1.5" />
+  
+  <!-- Content -->
+  <g transform="translate(600, 240)">
+    <!-- Pill Badge -->
+    <rect x="-140" y="-80" width="280" height="34" rx="17" fill="#eaf1e7" stroke="rgba(61,93,54,0.2)" />
+    <circle cx="-110" cy="-63" r="4" fill="#3d5d36" />
+    <text x="-95" y="-58" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#3d5d36" letter-spacing="1">PORTFOLIO / 2026</text>
+
+    <!-- Main Title -->
+    <text y="30" font-family="'Space Grotesk', sans-serif" font-size="76" font-weight="700" fill="#171916" text-anchor="middle" letter-spacing="-1">Akshat Tripathi</text>
+    
+    <!-- Subtitle -->
+    <text y="95" font-family="'Inter', sans-serif" font-size="28" font-weight="600" fill="#3d5d36" text-anchor="middle">Data Analytics &amp; Machine Learning</text>
+    
+    <!-- Bottom detail -->
+    <text y="145" font-family="'Inter', sans-serif" font-size="16" font-weight="400" fill="#757a70" text-anchor="middle">B.Tech Computer Science &amp; Engineering • Lovely Professional University</text>
+  </g>
+</svg>

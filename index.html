@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Akshat Tripathi | Data Analytics & Machine Learning</title>
+    <meta name="description" content="Portfolio of Akshat Tripathi — Computer Science student specializing in Data Analytics, Visualization, and Machine Learning.">
+    
+    <meta property="og:title" content="Akshat Tripathi | Data Analytics & Machine Learning">
+    <meta property="og:description" content="Portfolio of Akshat Tripathi — Computer Science student specializing in Data Analytics, Visualization, and Machine Learning.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/images/og-image.svg">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+
+    <!-- Google Fonts: Space Grotesk & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <header class="nav" id="nav">
+        <div class="container nav__container">
+            <a href="#home" class="nav__brand">
+                <span class="nav__avatar-badge" id="nav-initials">A</span>
+                <span id="nav-name">Akshat Tripathi</span>
+            </a>
+            
+            <div class="nav__right">
+                <nav class="nav__menu" aria-label="Main Navigation">
+                    <a href="#about" class="nav__link">About</a>
+                    <a href="#skills" class="nav__link">Skills</a>
+                    <a href="#projects" class="nav__link">Projects</a>
+                    <a href="#certifications" class="nav__link">Certifications</a>
+                    <a href="#education" class="nav__link">Education</a>
+                    <a href="#contact" class="nav__link">Contact</a>
+                </nav>
+                
+                <div class="nav__actions">
+                    <!-- Light / Dark Theme Toggle Button -->
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode" title="Toggle color theme">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+
+                    <a href="#contact" class="btn btn--primary btn--sm nav__contact-btn">Let's talk ↗</a>
+
+                    <!-- Mobile Hamburger -->
+                    <button class="nav__hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <!-- Subtle background contour curves -->
+            <svg class="hero__bg-lines" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M 600 150 C 450 150 350 250 300 400 C 250 550 150 600 0 600" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4,4" />
+                <path d="M 600 220 C 480 220 390 300 350 430 C 310 560 220 600 50 600" stroke="currentColor" stroke-width="1" />
+                <path d="M 600 300 C 510 300 440 370 410 470 C 380 570 300 600 120 600" stroke="currentColor" stroke-width="1.2" stroke-dasharray="6,6" />
+                <circle cx="300" cy="400" r="3.5" fill="currentColor" />
+                <circle cx="350" cy="430" r="2.5" fill="currentColor" />
+            </svg>
+
+            <div class="container hero__container">
+                <!-- Left: Professional Headline & Actions -->
+                <div class="hero__content">
+                    <div class="status-pill" id="hero-availability">
+                        <span class="status-dot"></span> AVAILABLE FOR DATA OPPORTUNITIES
+                    </div>
+
+                    <h1 class="hero__headline">
+                        Hi, I'm <span class="hero__name" id="hero-name-first">Akshat</span><br>
+                        <span class="hero__headline-accent" id="hero-tagline-main">Data Analyst &amp; ML</span>
+                        <span>Enthusiast.</span>
+                    </h1>
+
+                    <p class="hero__subtitle" id="hero-subtitle">
+                        Computer Science student exploring data, analytics, visualization, and machine learning to turn raw information into meaningful insights.
+                    </p>
+
+                    <div class="hero__cta-group">
+                        <a href="#projects" class="btn btn--primary">View my projects ↗</a>
+                        <a href="./assets/resume/Akshat_Tripathi_Resume.pdf" download="Akshat_Tripathi_Resume.pdf" class="btn btn--secondary" id="hero-resume-btn">Download Resume 📄</a>
+                    </div>
+
+                    <div class="hero__social-row">
+                        <span>FIND ME ON</span>
+                        <div class="hero__social-links">
+                            <a href="https://www.linkedin.com/in/akshat-tripathi-87a786321/" target="_blank" rel="noopener noreferrer" class="hero__social-icon" id="hero-linkedin-link" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/akshatVerse" target="_blank" rel="noopener noreferrer" class="hero__social-icon" id="hero-github-link" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Arched Portrait Area with Analytical Badges -->
+                <div class="hero__visual">
+                    <div class="hero__arch-frame">
+                        <img src="./assets/images/akshat-profile.jpg" alt="Akshat Tripathi" id="hero-profile-img">
+                    </div>
+
+                    <!-- Floating Badge 1: Data Insights -->
+                    <div class="floating-badge hero__badge--top-right">
+                        <div class="floating-badge__icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="20" x2="12" y2="10"></line>
+                                <line x1="18" y1="20" x2="18" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="16"></line>
+                            </svg>
+                        </div>
+                        <div class="floating-badge__text">
+                            <span class="floating-badge__label">Focus</span>
+                            <span class="floating-badge__value">Data Insights</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2: Build with Purpose -->
+                    <div class="floating-badge hero__badge--bottom-left">
+                        <div class="floating-badge__icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div class="floating-badge__text">
+                            <span class="floating-badge__label">Method</span>
+                            <span class="floating-badge__value">Build with Purpose</span>
+                        </div>
+                    </div>
+
+                    <!-- Subtle Index Indicator -->
+                    <div class="hero__corner-index">
+                        <span class="hero__corner-number">01</span>
+                        <span class="hero__corner-label">PORTFOLIO<br>/ 2026</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section__header animate-on-scroll">
+                    <span class="section__eyebrow">ABOUT ME</span>
+                    <h2 class="section__title">Turning Raw Information Into Clarity</h2>
+                    <p class="section__subtitle">A computer science student dedicated to the analytical cycle: data preparation, exploratory discovery, and actionable visual storytelling.</p>
+                </div>
+                
+                <div class="about__grid">
+                    <div class="about__content animate-on-scroll delay-100">
+                        <p id="about-intro" class="about__intro-text"></p>
+                        
+                        <div class="section__eyebrow" style="font-size: 0.78rem; margin-bottom: 0.6rem;">CORE INTERESTS</div>
+                        <div id="about-interests" class="about__interests"></div>
+
+                        <div class="about__edu-box">
+                            <div class="about__edu-degree" id="about-edu-degree">Bachelor of Technology in Computer Science &amp; Engineering</div>
+                            <div class="about__edu-meta" id="about-edu-meta">Lovely Professional University • CGPA: 7.28 • Since July 2024</div>
+                        </div>
+                    </div>
+                    
+                    <div id="about-focus-cards" class="about__focus-grid animate-on-scroll delay-200">
+                        <!-- Populated by main.js from siteData.about.focusAreas -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section" style="background-color: var(--color-bg-subtle);">
+            <div class="container">
+                <div class="section__header animate-on-scroll">
+                    <span class="section__eyebrow">SKILLS &amp; TOOLS</span>
+                    <h2 class="section__title">Technical Competencies</h2>
+                    <p class="section__subtitle">Core technologies and analytical frameworks utilized in exploratory data analysis, reporting, and statistical modeling.</p>
+                </div>
+                
+                <div id="skills-container" class="skills__grid animate-on-scroll delay-100">
+                    <!-- Populated by main.js from siteData.skills -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section__header animate-on-scroll">
+                    <span class="section__eyebrow">FEATURED WORK</span>
+                    <h2 class="section__title">Selected Projects</h2>
+                    <p class="section__subtitle">Case studies showcasing data cleaning, exploratory analysis, interactive dashboards, and health pattern modeling.</p>
+                </div>
+                
+                <div id="projects-container" class="projects__list">
+                    <!-- Populated by main.js from siteData.projects -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section" style="background-color: var(--color-bg-subtle);">
+            <div class="container">
+                <div class="section__header animate-on-scroll">
+                    <span class="section__eyebrow">CREDENTIALS</span>
+                    <h2 class="section__title">Certifications</h2>
+                    <p class="section__subtitle">Foundational certifications verified in database administration, query design, and object-oriented programming.</p>
+                </div>
+                
+                <div id="certifications-grid" class="certifications__grid animate-on-scroll delay-100">
+                    <!-- Populated by main.js from siteData.certifications -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <div class="section__header animate-on-scroll">
+                    <span class="section__eyebrow">RECOGNITION</span>
+                    <h2 class="section__title">Academic Achievements</h2>
+                    <p class="section__subtitle">Competitive Olympiad medals achieved in mathematics and science examinations.</p>
+                </div>
+                
+                <div id="achievements-container" class="achievements__grid animate-on-scroll delay-100">
+                    <!-- Populated by main.js from siteData.achievements -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section" style="background-color: var(--color-bg-subtle);">
+            <div class="container">
+                <div class="section__header animate-on-scroll">
+                    <span class="section__eyebrow">ACADEMICS</span>
+                    <h2 class="section__title">Education Background</h2>
+                    <p class="section__subtitle">Academic qualifications, ongoing degree program, and institutional records.</p>
+                </div>
+                
+                <div id="education-timeline" class="education__timeline animate-on-scroll delay-100">
+                    <!-- Populated by main.js from siteData.education -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section Banner -->
+        <section id="resume-section" class="section">
+            <div class="container">
+                <div class="resume-banner animate-on-scroll">
+                    <span class="section__eyebrow">CURRICULUM VITAE</span>
+                    <h2 class="resume-banner__title">Want the complete picture?</h2>
+                    <p class="resume-banner__subtitle">
+                        Download my comprehensive resume detailing academic coursework, technical capabilities, projects, and credentials.
+                    </p>
+                    <a href="./assets/resume/Akshat_Tripathi_Resume.pdf" download="Akshat_Tripathi_Resume.pdf" class="btn btn--primary btn--large" id="resume-download-btn">DOWNLOAD RESUME 📄</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section" style="background-color: var(--color-bg-subtle);">
+            <div class="container">
+                <div class="section__header animate-on-scroll">
+                    <span class="section__eyebrow">GET IN TOUCH</span>
+                    <h2 class="section__title">Let's Connect.</h2>
+                    <p class="section__subtitle">
+                        I am currently open to data analytics, machine learning, and visualization opportunities. Feel free to reach out directly via email or LinkedIn.
+                    </p>
+                </div>
+                
+                <div class="contact__grid">
+                    <!-- Direct Info Cards -->
+                    <div id="contact-info-cards" class="contact__cards-grid animate-on-scroll delay-100">
+                        <!-- Populated by main.js from siteData.contact -->
+                    </div>
+                    
+                    <!-- Direct Action Box -->
+                    <div class="contact__action-box animate-on-scroll delay-200">
+                        <div class="status-pill" style="margin-bottom: 0;">
+                            <span class="status-dot"></span> Active &amp; Responsive
+                        </div>
+                        <h3 class="contact__action-title">Start a Conversation</h3>
+                        <p class="contact__action-desc">
+                            Whether you have an internship opportunity, an entry-level position, or a data-driven project in mind, I'd welcome the chance to speak with you.
+                        </p>
+                        <div class="contact__action-buttons">
+                            <a href="mailto:akshattripathi250904@gmail.com" class="btn btn--primary" id="contact-mail-btn">Send an Email ✉</a>
+                            <button type="button" class="btn btn--secondary" id="copy-email-btn">Copy Email Address</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__copy">
+                © 2026 Akshat Tripathi. All rights reserved.
+            </p>
+            <span class="footer__focus">Data Analytics • Data Visualization • Machine Learning</span>
+            <a href="#home" class="footer__back">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

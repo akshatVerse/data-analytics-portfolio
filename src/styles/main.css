@@ -1,0 +1,176 @@
+/* ============================================================
+   AKSHAT TRIPATHI — DESIGN SYSTEM & TOKENS
+   Light-first, editorial, clean data-analytics portfolio
+   ============================================================ */
+
+:root {
+  /* Theme: LIGHT (Default) */
+  --color-bg: #fbfbf9;
+  --color-bg-subtle: #f3f3ee;
+  --color-surface: #ffffff;
+  --color-surface-hover: #fafaf6;
+  --color-surface-sunken: #eeeee8;
+  
+  --color-text-primary: #171916;
+  --color-text-secondary: #585d53;
+  --color-text-muted: #888d83;
+  
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border-hover: rgba(0, 0, 0, 0.16);
+  --color-border-subtle: rgba(0, 0, 0, 0.04);
+  
+  /* Accent: Refined Muted Sage / Olive Green */
+  --color-accent: #3d5d36;
+  --color-accent-hover: #2f4929;
+  --color-accent-light: rgba(61, 93, 54, 0.08);
+  --color-accent-border: rgba(61, 93, 54, 0.22);
+  --color-accent-text: #ffffff;
+  --color-accent-pill: #eaf1e7;
+  
+  /* Status Color */
+  --color-status: #408636;
+  
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 6px 20px -2px rgba(0, 0, 0, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 16px 36px -4px rgba(0, 0, 0, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+  
+  /* Typography */
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-btn: 10px;
+  --radius-card: 16px;
+  --radius-pill: 9999px;
+  --radius-arch: 180px 180px 24px 24px;
+  
+  /* Layout */
+  --space-container: 2rem;
+  --container-max-width: 1160px;
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.4s ease;
+}
+
+/* ============================================================
+   DARK THEME (Toggleable via data-theme="dark")
+   Deep warm charcoal background, lighter charcoal surfaces,
+   refined green accent, light text
+   ============================================================ */
+[data-theme="dark"] {
+  --color-bg: #121411;
+  --color-bg-subtle: #181b16;
+  --color-surface: #1d201b;
+  --color-surface-hover: #242821;
+  --color-surface-sunken: #151813;
+  
+  --color-text-primary: #edf0ea;
+  --color-text-secondary: #9ea39a;
+  --color-text-muted: #6e736a;
+  
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-hover: rgba(255, 255, 255, 0.18);
+  --color-border-subtle: rgba(255, 255, 255, 0.04);
+  
+  --color-accent: #7ea872;
+  --color-accent-hover: #92be86;
+  --color-accent-light: rgba(126, 168, 114, 0.12);
+  --color-accent-border: rgba(126, 168, 114, 0.3);
+  --color-accent-text: #121411;
+  --color-accent-pill: rgba(126, 168, 114, 0.15);
+  
+  --color-status: #6ebb60;
+  
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 18px 44px rgba(0, 0, 0, 0.6);
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-slow), color var(--transition-slow);
+}
+
+/* Typography Global */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+}
+
+p {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast), opacity var(--transition-fast);
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-accent-text);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: var(--radius-pill);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* Focus Visible for Accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
